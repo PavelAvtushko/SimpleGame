@@ -1,0 +1,164 @@
+body {
+    font-family: normal 14px arial,verdana;
+    width: 100%;
+    background-color: #07160b;
+    padding: 0;
+    margin: 0;
+    cursor: default;
+    }
+
+#container {
+    width: 1280px;
+    margin: 0 auto;
+    background: #83e244;
+    padding: 40px;
+    border-radius: 30px;
+    box-sizing: border-box;
+    border:10px 50;
+    border:10px solid #3d5b29;
+    box-shadow: inset 0 0 20px black;
+}
+
+.graphics {
+    position: relative;
+}
+
+.wrapper {
+    padding-top: 20px;
+    width:100%;
+    height:100%;
+    background-size: cover;
+}
+
+#background {
+    border-radius: 10px;
+    box-shadow: 0 0 10px green;
+    box-sizing: border-box;
+    background-size: cover;
+    opacity: 0.9;
+}
+
+#player, #enemy {
+    position: absolute;
+    top:0;
+    left:0;
+    display: block;
+}
+
+.atack {
+    width: 960px;
+    height: 550px;
+    position: absolute;
+    border-radius: 10px;
+    background: red;
+    opacity: 0.4;
+    top: 0;
+    left:0;
+}
+
+#coin {
+    position: absolute;
+    top:0;
+    left:0;
+    display: block;
+}
+
+#Health, #Score {
+    color: blue;
+}
+
+.gameData {
+    font-size: 40px;
+    position: absolute;
+    top: 10px;
+    left: 980px;
+}
+
+.controlDescripton {
+    width: 100%;
+    box-shadow: inset 0 0 5px blue;
+    background: white;
+    font-size: 20px;
+    border-radius: 20px;
+    padding: 10px 0 10px 10px;
+    list-style: none;
+    color: #3d5b29;
+}
+
+.controlDescripton>span {
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.healthDiagramBorder, .scoreDiagramBorder {
+    width: 200px;
+    height: 20px;
+    border-radius: 5px;
+    box-shadow: inset 0 0 10px black;
+    margin-bottom: 30px;
+}
+
+#healthDiagram, #scoreDiagram {
+    height: 20px;
+    border-radius: 5px;
+    background: #2e71dd;
+}
+
+#healthDiagram, #scoreDiagram {
+    height: 20px;
+    border-radius: 5px;
+    background: #2e71dd;
+}
+
+ #scoreDiagram {
+    width: 0;
+ }
+
+#play-again {
+    width: 200px;
+    height: 60px;
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+    background: #237c1c;
+    border-radius: 20px;
+    transition: 0.2s;
+}
+
+#play-again:hover {
+    background: #50aace;
+    color: #17601c;
+}
+
+
+#lifePanel {
+    padding: 0;
+}
+
+#lifePanel li {
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    margin: 0 2px;
+    border-radius: 50%;
+    box-shadow: inset 0 0 10px black;
+}
+
+.lifeVisible {
+    background: #2e71dd;
+}
+
+#gameOver, #winGame {
+    position: absolute;
+    top: 180px;
+    left: 180px;
+    font-weight: bolder;
+    font-size: 100px;
+    color: #83e244;
+    text-transform: uppercase;
+    text-shadow: 5px 5px white;
+}
+
+.hiddenText {
+    visibility: hidden;
+}
