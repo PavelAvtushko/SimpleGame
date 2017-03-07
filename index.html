@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AvtushkoSimpleGame</title>
+    <link rel = "stylesheet" type = "text/css" href = "css/style.css">
+    </head>
+    <body> 
+        <div class = "wrapper">
+            <div id = "container">
+                <div class = "graphics">
+                    <canvas id = "background" width = "960" height = "550"></canvas>
+                    <div id="playerUnderAtack" class=""></div>              
+                    <canvas id = "enemy" width = "960" height = "550"></canvas>
+                    <canvas id = "player" width = "960" height = "550"></canvas>
+                    <canvas id = "coin" width = "960" height = "550"></canvas>
+                    <span id = "gameOver" class = "hiddenText">game over</span>
+                    <span id = "winGame" class = "hiddenText">you won!!!</span>
+                    <div class = "gameData">
+
+                        <div class="health">Health: <span id = "Health"></span></div>
+                        <div class="healthDiagramBorder"><div id = "healthDiagram"></div></div>
+                        <div class="score">Score: <span id = "Score"></span></div>
+                        <div class="scoreDiagramBorder"><div id="scoreDiagram"></div></div>
+                        
+                        <ul id = "lifePanel">
+                            <span>Life</span>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+
+                        <ul class = "controlDescripton">
+                            <span>control</span>
+                            <li>" w " - move up</li>
+                            <li>" s " - move down</li>
+                            <li>" a " - move backward</li>
+                            <li>" d " - move forward</li>
+                        </ul>
+
+                        <button id = "play-again" type="button">Play Again</button>
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="js/ImageResurses.js"></script>
+        <script src="js/Background.js"></script>
+        <script src="js/KeybordHandler.js"></script>
+        <script src="js/Enemy.js"></script>
+        <script src="js/Coins.js"></script>
+        <script src="js/Player.js"></script>
+        <script src="js/CrashEvent.js"></script>
+        <script src="js/Application.js"></script>
+    </body>
+</html>
